@@ -30,7 +30,7 @@ def contactus(request):
 def index(request):
     #return HttpResponse('hello blueking')
     from celery_tasks import execute_task_eta
-    execute_task_eta()
+    #execute_task_eta()
     return render(request, 'home_application/index.html')
 
 def option(request):
